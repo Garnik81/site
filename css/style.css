@@ -133,16 +133,16 @@ a:hover {
     animation: zoomInOut 10s infinite alternate; /* Плавный наезд и смена */
 }
 
-.slide1 { background-image: url(../slide-image/image1.jpg); }
-.slide2 { background-image: url(../slide-image/image2.jpg); }
-.slide3 { background-image: url(../slide-image/image3.jpg); }
-.slide4 { background-image: url(../slide-image/image4.jpg); }
-.slide5 { background-image: url(../slide-image/image5.jpg); }
-.slide6 { background-image: url(../slide-image/image6.jpg); }
-.slide7 { background-image: url(../slide-image/image7.jpg); }
-.slide8 { background-image: url(../slide-image/image8.jpg); }
-.slide9 { background-image: url(../slide-image/image9.jpg); }
-.slide10 { background-image: url(../slide-image/image10.jpg); }
+.slide1 { background-image: url(https://garnik81.github.io/ukrbud/slide-image/image1.jpg); }
+.slide2 { background-image: url(https://garnik81.github.io/ukrbud/slide-image/image2.jpg); }
+.slide3 { background-image: url(https://garnik81.github.io/ukrbud/slide-image/image3.jpg); }
+.slide4 { background-image: url(https://garnik81.github.io/ukrbud/slide-image/image4.jpg); }
+.slide5 { background-image: url(https://garnik81.github.io/ukrbud/slide-image/image5.jpg); }
+.slide6 { background-image: url(https://garnik81.github.io/ukrbud/slide-image/image6.jpg); }
+.slide7 { background-image: url(https://garnik81.github.io/ukrbud/slide-image/image7.jpg); }
+.slide8 { background-image: url(https://garnik81.github.io/ukrbud/slide-image/image8.jpg); }
+.slide9 { background-image: url(https://garnik81.github.io/ukrbud/slide-image/image9.jpg); }
+.slide10 { background-image: url(https://garnik81.github.io/ukrbud/slide-image/image10.jpg); }
 
 @keyframes zoomInOut {
     0%, 100% {
