@@ -1,3 +1,19 @@
+:root{
+    --color-green: #76bc21;
+    --background-color-opacity: #00000085;
+}
+
+a {
+    color: var(--color-green);
+    text-decoration: none;
+    transition: opacity .25s ease;
+}
+
+a:hover {
+    opacity: 0.5;
+    color: var(--color-green);
+}
+
 .header {
     height: 110vh;
     background-size: cover;
@@ -9,6 +25,7 @@
 
 .header-top {
     position: absolute;
+    width: 100%;
     top: 6%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -17,32 +34,86 @@
     color: #ffffff;
     display: flex;
     align-items:center;
-    justify-items: center;
+    justify-content: space-evenly;
     height: 80px;
-    background-color: #00000050;
+    background-color: var(--background-color-opacity);
+}
+
+.header-top a.active {
+    color: var(--color-green);
 }
 
 .logo {
     font-size: 25px;
-    margin-right: 20px;
+    margin-right: 100px;
+    font-weight: bold;
+    color: #ffffff;
 }
 
 .menu {
-    color: #ffffff;
     display: flex;
-    align-items:;
-    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.menu-element {
+    margin-right: 25px;
+    font-size: 20px;
+}
+
+.menu-element:last-child {
+    margin-right: 0px;
+}
+
+.menu-elementlink {
+    font-weight: bold;
+    color: #ffffff;    
+}
+
+.switcher {
+    margin-left: 100px;
 }
 
 .header-center {
     position: absolute;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     z-index: 2; /* Устанавливаем для текста более высокий z-index */
-    color: #ffffff;
-    font-size: 40px;
+    align-items: center;
+    padding-top: 40px;
+    height: calc(110vh - 80px);
+}
+
+.header-center__wrapper {
+    width: 100%;
+    /*background-color: var(--background-color-opacity);*/
+    text-align: left;
+}
+
+.name {
+    font-size: 100px;
+    font-weight: bold;
+    font-family:  Verdana;
+    -webkit-text-stroke: 1px black; /* для WebKit (Chrome, Safari, Opera) */
+    text-stroke: 1px black; /* Стандартное свойство */
+    /*color: #ff0000;*/
+    background-image: linear-gradient(to top, #efff0a, #2242f8);
+    -webkit-background-clip: text; /* Для WebKit (Chrome, Safari) */
+    background-clip: text; /* Стандартное свойство */
+    color: transparent; /* Делаем цвет текста прозрачным */
+}
+
+.name-description {
+    font-size: 38px;
+    font-weight: bold;
+    font-family:  sans-serif;
+    -webkit-text-stroke: 1px black; /* для WebKit (Chrome, Safari, Opera) */
+    text-stroke: 1px black; /* Стандартное свойство */
+    color: #fffdfd;
 }
 
 .slideshow-container {
