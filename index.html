@@ -8,35 +8,47 @@
     <title>УКРБУДІНВЕСТ-ТОРГ</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header-background"></div>
-        <div class="header-top">
-            <a class="logo" href="" ><nobr>УКРБУДІНВЕСТ-ТОРГ</nobr></a>
-            <nav class="navigation">
-                <ul class="menu">
-                    <li class="menu-element">
-                        <a class="menu-elementlink active" href="">Головна</a>
-                    </li>
-                    <li class="menu-element">
-                        <a class="menu-elementlink" href="">Про&nbspкомпанію</a>
-                    </li>
-                    <li class="menu-element">
-                        <a class="menu-elementlink" href="">Партнери</a>
-                    </li>
-                    <li class="menu-element">
-                        <a class="menu-elementlink" href="">Сертифікати</a>
-                    </li>
-                    <li class="menu-element">
-                        <a class="menu-elementlink" href="">Контакти</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="switcher">
-                <img src="../images/ukraine.jpg" alt="Flag_Ukraine" class="image">
-                <span>UA/EN</span>
-                <img src="../images/Britain.jpg" alt="Flag_Britain" class="image">
+    <div class="header-top">
+        <a class="link logo block-center" href="#home" ><nobr>УКРБУДІНВЕСТ-ТОРГ</nobr></a>
+        <nav class="navigation">
+            <ul class="menu block-center">
+                <li class="menu-element">
+                    <a class=" link menu-elementlink active home block-center" href="#home">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
+                            <path d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu-element">
+                    <a class="link menu-elementlink block-center" href="#about-company">Про&nbspкомпанію</a>
+                </li>
+                <li class="menu-element">
+                    <a class="link menu-elementlink block-center" href="#partners">Партнери</a>
+                </li>
+                <li class="menu-element">
+                    <a class="link menu-elementlink block-center" href="#sertificate">Сертифікати</a>
+                </li>
+                <li class="menu-element">
+                    <a class="link menu-elementlink block-center" href="#contact-us">Контакти</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="switcher-container block-center">
+            <div class="switcher-wrapper">
+                <input type="checkbox" id="lang" checked />
+                <label class="switcher" for="lang">
+                    <span></span>
+                    <span></span>
+                    <div class="toggle"></div> <!-- Новый элемент для смещения картинки -->
+                </label>
             </div>
         </div>
+    </div>
+    <header class="header" id="home">
+        <div class="header-background"></div>
+        <div class="header__background-wrapper"></div>
+        
         <div class="header-center">
             <div class="header-center__wrapper">
                 <h1 class="name"><nobr>УКРБУДІНВЕСТ-ТОРГ</nobr></h1>
@@ -58,7 +70,7 @@
             <div class="slide slide10"></div>
         </div>
     </header>
-    <section class="about-company">
+    <section class="about-company" id="about-company">
         <h2 class="first-title">Про компанію</h2>
         <div class="left">
             <img src="" alt="Колаж">
@@ -105,7 +117,7 @@
         </div>
 
     </section>
-    <section class="partners">
+    <section class="partners" id="partners">
         <h2 class="second-title">Партнери</h2>
         <ul class="partners-filters">
             <li class="partners-filter">Всі</li>
@@ -135,7 +147,7 @@
             </div>
         </div>
     </section>
-    <section class="sertificate">
+    <section class="sertificate" id="sertificate">
         <h2 class="second-title">Сертифікати</h2>
         <ul class="sertificate-list">
             <li class="sertificate-list__element">Сертифікат1</li>
@@ -148,7 +160,7 @@
             <li class="sertificate-list__element">Сертифікат8</li>
         </ul>
     </section>
-    <section class="contact-us">
+    <section class="contact-us" id="contact-us">
         <h2 class="second-title">Звротній зв'язок</h2>
         <form action="" class="contact-us__form">
             <div class="input-wrapper">
@@ -173,7 +185,7 @@
     <footer>
         <ul class="socials">
             <li class="social-element">
-                <a href="" class="social-element__link">TG</a>
+                <a href="" class="link social-element__link">TG</a>
             </li>
         </ul>
         <div class="footer-about">
