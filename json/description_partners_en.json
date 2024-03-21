@@ -1,0 +1,64 @@
+{
+  "partners": [
+    {
+      "name": "SWEETONDALE",
+      "description": "Is one of the largest international manufacturers of reliable and efficient building materials. The company offers the market cutting-edge technologies that combine global experience and developments from its own Scientific Centers. Collaboration with design institutes and architectural studios allows for flexible and prompt response to changes in consumer demands.",
+      "image": "../images/partners/sweetondale.jpg"
+    },
+    {
+      "name": "ANSERGLOBE",
+      "description": "Consistently high product quality is the company's main priority. This is evidenced by numerous awards from the national competition 'Hundred Best Products of Ukraine' and participation in regional exhibitions. The production process utilizes a modern raw material base from leading global brands, with triple product quality control carried out by a certified laboratory.",
+      "image": "../images/partners/anserglobe.jpg"
+    },
+    {
+      "name": "AQUAIZOL",
+      "description": "One of the leading Ukrainian manufacturers of bitumen-polymer rolled roofing and waterproofing materials of European level. Today, 'Aquaizol' holds leading positions in the domestic roofing materials market and is an undisputed leader in the industry in Eastern Ukraine. The high quality of 'Aquaizol' brand products is recognized with the honorary mark 'Highest Grade' by the Assembly of Business Circles of Ukraine.",
+      "image": "../images/partners/aquaizol.jpg"
+    },
+    {
+      "name": "CERESIT",
+      "description": "Complex construction projects require special solutions. All Ceresit's systemic building solutions are developed based on years of experience and meet the highest quality standards. Ceresit offers a wide range of products and systemic solutions in key categories such as facing, insulation, flooring and wall systems, waterproofing, and more.",
+      "image": "../images/partners/ceresit.jpg"
+    },
+    {
+      "name": "DUFA",
+      "description": "An advanced German brand specializing in the production of paint and coating products for over 65 years. Over this time, the company has accumulated experience and today produces products of the highest quality.",
+      "image": "../images/partners/dufa.jpg"
+    },
+    {
+      "name": "KNAUF",
+      "description": "One of the leading manufacturers of building and finishing materials in Europe, and the complete systems of this company for interior finishing (the 'dry' method) are recognized as some of the most advanced in the world and are successfully used by construction professionals from various countries.",
+      "image": "../images/partners/Knauf.jpg"
+    },
+    {
+      "name": "KRONOSPAN",
+      "description": "The world's largest manufacturer of wood-based panels (plain and laminated particleboard, MDF, OSB, and related products such as flooring coverings, countertops, etc.) with factories across Europe and worldwide. In Ukraine, Kronospan currently has a Lamination plant in Novovolynsk and sales and marketing office in Kyiv.",
+      "image": "../images/partners/Kronospan.jpg"
+    },
+    {
+      "name": "LACRYSIL",
+      "description": "This is a product of the Ukrainian manufacturer LLC 'Polymer-Lak'. The company was founded in Ukraine in 1993 and has been a reliable and well-known supplier of building adhesives for all materials and surfaces, silicones, acrylics, and combined sealants, polyurethane foams, insulation, etc., for 30 years.",
+      "image": "../images/partners/lacrysil.jpg"
+    },
+    {
+      "name": "MAPEI",
+      "description": "It is among the leading global manufacturers of construction chemistry. It offers a comprehensive approach and systemic solutions with care for both the environment, the planet, and people. Mapei utilizes all its accumulated experience and expertise to contribute to the development and construction of important projects worldwide.",
+      "image": "../images/partners/mapei.jpg"
+    },
+    {
+      "name": "PSM-PROFILE",
+      "description": "The company has been specializing in the production of roofing and facade materials for over 15 years. It employs advanced European technologies and proprietary developments. PSM-PROFILE's production facilities are located in Poltava city. The quality of the products manufactured is controlled at all stages of production.",
+      "image": "../images/partners/psm-profile.jpg"
+    },
+    {
+      "name": "SIKA BUILDING TRUST",
+      "description": "This is a special chemical company that holds leading positions in the development and production of systems and products for bonding, sealing, damping, reinforcement, and protection in the construction sector and automotive industry.",
+      "image": "../images/partners/sika_building_trust.jpg"
+    },
+    {
+      "name": "STONELIGHT",
+      "description": "A manufacturer of gas concrete building blocks operating on modern German equipment. The 'Stonelight' plant is equipped with an automated line 'Hetten', developed in Germany. The manufacturers of this line have adapted the equipment to their own block production technology.",
+      "image": "../images/partners/stlight.jpg"
+    }
+  ]
+}

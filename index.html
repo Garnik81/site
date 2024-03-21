@@ -3,13 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <title>УКРБУДІНВЕСТ-ТОРГ</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        .slide1 { background-image: url(images/slide-image/image1.webp); }
+        .slide2 { background-image: url(images/slide-image/image2.webp); }
+        .slide3 { background-image: url(images/slide-image/image3.webp); }
+        .slide4 { background-image: url(images/slide-image/image4.webp); }
+        .slide5 { background-image: url(images/slide-image/image5.webp); }
+        .slide6 { background-image: url(images/slide-image/image6.webp); }
+        .slide7 { background-image: url(images/slide-image/image7.webp); }
+        .slide8 { background-image: url(images/slide-image/image8.webp); }
+        .slide9 { background-image: url(images/slide-image/image9.webp); }
+        .slide10 { background-image: url(images/slide-image/image10.webp); }
+        .switcher:before {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 30px;
+            color: #000000;
+            background-image: url("../images/switcher/Britain.webp");
+            background-size: cover; /* или другое значение, чтобы изображение подстраивалось под размер блока */
+            left: 42px;
+            z-index: 1;
+            border-radius: 20px;
+            transition: left 0.25s ease-in-out;
+        }
+
+        #lang:checked + .switcher:before {
+            left: 6px;
+            background-image: url("../images/switcher/ukraine.webp");
+            background-size: cover; /* или другое значение, чтобы изображение подстраивалось под размер блока */
+        }
+    </style>
+    <title data-translate-key="llc">УКРБУДІНВЕСТ-ТОРГ</title>
 </head>
 <body>
     <div class="header-top">
-        <a class="link logo block-center" href="#home" ><nobr>УКРБУДІНВЕСТ-ТОРГ</nobr></a>
+        <a class="link logo block-center" href="#home"><nobr data-translate-key="llc">УКРБУДІНВЕСТ-ТОРГ</nobr></a>
         <nav class="navigation">
             <ul class="menu block-center">
                 <li class="menu-element">
@@ -21,22 +52,22 @@
                     </a>
                 </li>
                 <li class="menu-element">
-                    <a class="link menu-elementlink block-center" href="#about-company">Про&nbspкомпанію</a>
+                    <a class="link menu-elementlink block-center" href="#about-company" data-translate-key="about-company">Про&nbspкомпанію</a>
                 </li>
                 <li class="menu-element">
-                    <a class="link menu-elementlink block-center" href="#partners">Партнери</a>
+                    <a class="link menu-elementlink block-center" href="#partners" data-translate-key="partners">Партнери</a>
                 </li>
                 <li class="menu-element">
-                    <a class="link menu-elementlink block-center" href="#sertificate">Сертифікати</a>
+                    <a class="link menu-elementlink block-center" href="#sertificate" data-translate-key="sertificate">Сертифікати</a>
                 </li>
                 <li class="menu-element">
-                    <a class="link menu-elementlink block-center" href="#contact-us">Контакти</a>
+                    <a class="link menu-elementlink block-center" href="#contact-us" data-translate-key="contact-us">Контакти</a>
                 </li>
             </ul>
         </nav>
         <div class="switcher-container block-center">
             <div class="switcher-wrapper">
-                <input type="checkbox" id="lang" checked />
+                <input type="checkbox" id="lang" data-translate-file="json/translations.json" checked />
                 <label class="switcher" for="lang">
                     <span></span>
                     <span></span>
@@ -48,11 +79,10 @@
     <header class="header" id="home">
         <div class="header-background"></div>
         <div class="header__background-wrapper"></div>
-        
         <div class="header-center">
             <div class="header-center__wrapper">
-                <h1 class="name"><nobr>УКРБУДІНВЕСТ-ТОРГ</nobr></h1>
-                <p class="name-description"><nobr>Будуємо майбутнє разом.			
+                <h1 class="name"><nobr data-translate-key="llc">УКРБУДІНВЕСТ-ТОРГ</nobr></h1>
+                <p class="name-description"><nobr data-translate-key="building">Будуємо майбутнє разом.			
                     Ми зможемо все!</nobr>
                 </p>
             </div>
@@ -70,116 +100,305 @@
             <div class="slide slide10"></div>
         </div>
     </header>
-    <section class="about-company" id="about-company">
-        <h2 class="first-title">Про компанію</h2>
-        <div class="left">
-            <img src="" alt="Колаж">
-        </div>
-        <div class="right">
-            <h2 class="about-company__title">Товариство з обмеженою відповідальністю "УКРБУДІНВЕСТ-
-                ТОРГ»</h2>
-            <p class="about-company__description">ТОВ «УКРБУДІНВЕСТ-ТОРГ» має багаторічний досвід роботи у галузі постачання різноманітних матеріалів.</p>
-            <p class="about-company__description">Компанія приймає участь у комерційних та державних тендерах.</p>
-            <p class="about-company__description">Маємо власне виробництво габіонів та скоби будівельної. </p>
-            <p class="about-company__description">Перевірена якість: ми пропонуємо продукцію, лише тих виробників, якість матеріалів яких відповідає міжнародним стандартам та українським ГОСТам. </p>
-            <p class="about-company__description">Компанія є представником та співпрацює з відомими виробниками: Knauf, Ceresit, Anserglob, Lacrysil, Sweetondale, Sika, Kronospan, Stonelight, Aquaizol, Dufa, Industry, Івано-Франківськ - Дах, Mapei, PSM-Profile – в загальній складності понад 70 виробників. </p>
-            <p class="about-company__description">Підприємство ТОВ «УКРБУДІНВЕСТ-ТОРГ» та дочерні компанії співпрацюють з міжнародними благодійними фондами Америки, Швейцарії, Данії, а саме: </p>
+    <section class="about-company block-center" id="about-company">
+        <div class="about-company-block">
+            <div class="left">
+                <img src="images/about_company/image1.jpg" alt="Фото" class="about-company-block__image">
+                <img src="images/about_company/image2.jpg" alt="Фото" class="about-company-block__image">
+                <img src="images/about_company/image3.jpg" alt="Фото" class="about-company-block__image">
+            </div>
+            <div class="right">
+            <h2 class="about-company__title" data-translate-key="llcf">Товариство з обмеженою відповідальністю «УКРБУДІНВЕСТ-ТОРГ»</h2>
+            <p class="about-company__description" data-translate-key="a_c_des1">Має багаторічний досвід роботи у галузі постачання різноманітних матеріалів. 
+                Компанія приймає участь у комерційних та державних тендерних закупівлях. Маємо власне виробництво габіонів та скоби будівельної.</p>
+            <p class="about-company__description" data-translate-key="a_c_des2">Перевірена якість: ми пропонуємо продукцію, лише тих виробників, якість матеріалів яких відповідає міжнародним стандартам та українським ГОСТам. </p>
+            <p class="about-company__description" data-translate-key="a_c_des3">Компанія є представником та співпрацює з відомими виробниками: Knauf, Ceresit, Anserglob, Lacrysil, Sweetondale, Sika, Kronospan, Stonelight, Aquaizol, Dufa, Industry, Івано-Франківськ - Дах, Mapei, PSM-Profile – в загальній складності понад 70 виробників. </p>
+            <p class="about-company__description" data-translate-key="a_c_des4">Підприємство ТОВ «УКРБУДІНВЕСТ-ТОРГ» та дочерні компанії співпрацюють з міжнародними благодійними фондами Америки, Швейцарії, Данії, а саме: </p>
             <ul class="about-company__description">
-                <li class="about-company__description">SEPARATE SUBDIVISION INTERSOS - HUMANITARIAN NON-COMMERCIAL ORGANIZATION IN UKRAINE</li>
-                <li class="about-company__description">CHARITABLE ORGANISATION «CHARITABLE FUND «SWISS CHURCH AID (HEKS\EPER)»</li>
-                <li class="about-company__description">Helvetas Swiss Intercooperation</li>
-                <li class="about-company__description">ПРЕДСТАВНИЦТВО ІНОЗЕМНОЇ НЕУРЯДОВОЇ ОРГАНІЗАЦІЇ МЕРСІ КОРПС (MERCY CORPS)</li>
-                <li class="about-company__description">DRC Danish Refugee Council</li>
-                <li class="about-company__description">Regional organization of the Red Cross Society of Ukraine</li>
-                <li class="about-company__description">БО «БФ «РАНОК ВІДРОДЖЕННЯ»</li>
+                <li class="about-company__description-list">
+                    <span class="about-company__description-list_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+                        </svg>
+                    </span><span data-translate-key="a_c_des5">Відокремлений підрозділ «ІНТЕРСОС» - гуманітарна некомерційна організація в Україні</span></li>
+                <li class="about-company__description-list">
+                    <span class="about-company__description-list_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+                        </svg>
+                    </span><span data-translate-key="a_c_des6">Благодійна організація «Благодійний Фонд «Швейцарська Церковна Допомога» (HEKS\EPER)»</span></li>
+                <li class="about-company__description-list">
+                    <span class="about-company__description-list_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+                        </svg>
+                    </span><span data-translate-key="a_c_des7">Швейцарське співробітництво Хельветас</span></li>
+                <li class="about-company__description-list">
+                    <span class="about-company__description-list_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+                        </svg>
+                    </span><span data-translate-key="a_c_des8">Представництво іноземної неурядової організації «МЕРСІ КОРПС»(MERCY CORPS)</span></li>
+                <li class="about-company__description-list">
+                    <span class="about-company__description-list_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+                        </svg>
+                    </span><span data-translate-key="a_c_des9">ДРБ Данська рада у справах біженців (DRC)</span></li>
+                <li class="about-company__description-list">
+                    <span class="about-company__description-list_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+                        </svg>
+                    </span><span data-translate-key="a_c_des10">Обласна організація Товариства Червоного Хреста України</span></li>
+                <li class="about-company__description-list">
+                    <span class="about-company__description-list_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+                        </svg>
+                    </span><span data-translate-key="a_c_des11">Благодійна організація «Благодійний Фонд «Ранок Відродження»</span></li>
             </ul>
-            <p class="about-company__description">Наразі, наше підприємство та дочірні підприємства спеціалізуються на постачанні товарів для благодійних фондів та держ. організацій: </p>
+            <p class="about-company__description"></p>
+            <p class="about-company__description" data-translate-key="a_c_des12">Наразі, наше підприємство та дочірні підприємства спеціалізуються на постачанні товарів для благодійних фондів та державних організацій: </p>
             <ul class="about-company__description">
-                <li class="about-company__description">топливні брикети із лузги насіння соняшника</li>
-                <li class="about-company__description">побутова техніка</li>
-                <li class="about-company__description">гігієнічні набори</li>
-                <li class="about-company__description">продуктові набори</li>
-                <li class="about-company__description">спальні мішки, електричні простирадла, меблі</li>
-                <li class="about-company__description">пластикові вікна (монтаж та демонтаж) та виконання фасадних та ремонтних робіт</li>
-                <li class="about-company__description">медичне обладнання</li>
-                <li class="about-company__description">пластикові ємності для питної води</li>
-                <li class="about-company__description">будівельні матеріали та багато іншого</li>
+                <li class="about-company__description-list">
+                    <span class="about-company__description-list_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+                        </svg>
+                    </span><span data-translate-key="a_c_des13">топливні брикети із лузги насіння соняшника</span></li>
+                <li class="about-company__description-list">
+                    <span class="about-company__description-list_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+                        </svg>
+                    </span><span data-translate-key="a_c_des14">побутова техніка</span></li>
+                <li class="about-company__description-list">
+                    <span class="about-company__description-list_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+                        </svg>
+                    </span><span data-translate-key="a_c_des15">гігієнічні набори</span></li>
+                <li class="about-company__description-list">
+                    <span class="about-company__description-list_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+                        </svg>
+                    </span><span data-translate-key="a_c_des16">продуктові набори</span></li>
+                <li class="about-company__description-list">
+                    <span class="about-company__description-list_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+                        </svg>
+                    </span><span data-translate-key="a_c_des17">спальні мішки, електричні простирадла, меблі</span></li>
+                <li class="about-company__description-list">
+                    <span class="about-company__description-list_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+                        </svg>
+                    </span><span data-translate-key="a_c_des18">пластикові вікна (монтаж та демонтаж) та виконання фасадних та ремонтних робіт</span></li>
+                <li class="about-company__description-list">
+                    <span class="about-company__description-list_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+                        </svg>
+                    </span><span data-translate-key="a_c_des19">медичне обладнання</span></li>
+                <li class="about-company__description-list">
+                    <span class="about-company__description-list_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+                        </svg>
+                    </span><span data-translate-key="a_c_des20">пластикові ємності для питної води</span></li>
+                <li class="about-company__description-list">
+                    <span class="about-company__description-list_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+                        </svg>
+                    </span><span data-translate-key="a_c_des21">будівельні матеріали та багато іншого</span></li>
             </ul>
+            <p class="about-company__description"></p>
+            <p class="about-company__title-requisite" data-translate-key="a_c_des22">Реквізити компанії:</p>
             <ul class="about-company__extra">
-                <li class="about-company__extra-element"><span class="bold">Код ЄДРПОУ:</span> 
-                    <span>43445183</span></li>
-                <li class="about-company__extra-element"><span class="bold">Юридична адреса:</span>
-                    <span>85306, Донецька область, місто Покровськ, вулиця Шмідта, будинок 161А</span></li>
-                <li class="about-company__extra-element"><span class="bold">Банківськи реквізити:</span> 
-                    <span>IBAN UA603355480000026009053628045 в АТ КБ «Приватбанк»</span></li>
+                <li class="about-company__extra-element">
+                    <span class="about-company__extra-icon edrpou">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M12 3.75a6.715 6.715 0 0 0-3.722 1.118.75.75 0 1 1-.828-1.25 8.25 8.25 0 0 1 12.8 6.883c0 3.014-.574 5.897-1.62 8.543a.75.75 0 0 1-1.395-.551A21.69 21.69 0 0 0 18.75 10.5 6.75 6.75 0 0 0 12 3.75ZM6.157 5.739a.75.75 0 0 1 .21 1.04A6.715 6.715 0 0 0 5.25 10.5c0 1.613-.463 3.12-1.265 4.393a.75.75 0 0 1-1.27-.8A6.715 6.715 0 0 0 3.75 10.5c0-1.68.503-3.246 1.367-4.55a.75.75 0 0 1 1.04-.211ZM12 7.5a3 3 0 0 0-3 3c0 3.1-1.176 5.927-3.105 8.056a.75.75 0 1 1-1.112-1.008A10.459 10.459 0 0 0 7.5 10.5a4.5 4.5 0 1 1 9 0c0 .547-.022 1.09-.067 1.626a.75.75 0 0 1-1.495-.123c.041-.495.062-.996.062-1.503a3 3 0 0 0-3-3Zm0 2.25a.75.75 0 0 1 .75.75c0 3.908-1.424 7.485-3.781 10.238a.75.75 0 0 1-1.14-.975A14.19 14.19 0 0 0 11.25 10.5a.75.75 0 0 1 .75-.75Zm3.239 5.183a.75.75 0 0 1 .515.927 19.417 19.417 0 0 1-2.585 5.544.75.75 0 0 1-1.243-.84 17.915 17.915 0 0 0 2.386-5.116.75.75 0 0 1 .927-.515Z" clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                    <span class="about-company__extra-title bold" data-translate-key="a_c_des23">Код ЄДРПОУ:</span> 
+                    <span class="about-company__extra-discription block">43445183</span></li>
+                <li class="about-company__extra-element">
+                    <span class="about-company__extra-icon adres">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M3 2.25a.75.75 0 0 0 0 1.5v16.5h-.75a.75.75 0 0 0 0 1.5H15v-18a.75.75 0 0 0 0-1.5H3ZM6.75 19.5v-2.25a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-.75.75h-3a.75.75 0 0 1-.75-.75ZM6 6.75A.75.75 0 0 1 6.75 6h.75a.75.75 0 0 1 0 1.5h-.75A.75.75 0 0 1 6 6.75ZM6.75 9a.75.75 0 0 0 0 1.5h.75a.75.75 0 0 0 0-1.5h-.75ZM6 12.75a.75.75 0 0 1 .75-.75h.75a.75.75 0 0 1 0 1.5h-.75a.75.75 0 0 1-.75-.75ZM10.5 6a.75.75 0 0 0 0 1.5h.75a.75.75 0 0 0 0-1.5h-.75Zm-.75 3.75A.75.75 0 0 1 10.5 9h.75a.75.75 0 0 1 0 1.5h-.75a.75.75 0 0 1-.75-.75ZM10.5 12a.75.75 0 0 0 0 1.5h.75a.75.75 0 0 0 0-1.5h-.75ZM16.5 6.75v15h5.25a.75.75 0 0 0 0-1.5H21v-12a.75.75 0 0 0 0-1.5h-4.5Zm1.5 4.5a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75h-.008a.75.75 0 0 1-.75-.75v-.008Zm.75 2.25a.75.75 0 0 0-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 0 0 .75-.75v-.008a.75.75 0 0 0-.75-.75h-.008ZM18 17.25a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75h-.008a.75.75 0 0 1-.75-.75v-.008Z" clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                    <span class="about-company__extra-title bold" data-translate-key="a_c_des24">Юридична адреса:</span>
+                    <span class="about-company__extra-discription block" data-translate-key="a_c_des25">85306, Донецька область, місто Покровськ, вулиця Шмідта, будинок 161А</span></li>
+                <li class="about-company__extra-element">
+                    <span class="about-company__extra-icon bank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path d="M4.5 3.75a3 3 0 0 0-3 3v.75h21v-.75a3 3 0 0 0-3-3h-15Z" />
+                            <path fill-rule="evenodd" d="M22.5 9.75h-21v7.5a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3v-7.5Zm-18 3.75a.75.75 0 0 1 .75-.75h6a.75.75 0 0 1 0 1.5h-6a.75.75 0 0 1-.75-.75Zm.75 2.25a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z" clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                    <span class="about-company__extra-title bold" data-translate-key="a_c_des26">Банківськи реквізити:</span> 
+                    <span class="about-company__extra-discription block" data-translate-key="a_c_des27">IBAN UA603355480000026009053628045 в АТ КБ «Приватбанк» МФО 335548</span></li>
             </ul>
             
         </div>
-
+    </div>
     </section>
     <section class="partners" id="partners">
-        <h2 class="second-title">Партнери</h2>
-        <ul class="partners-filters">
-            <li class="partners-filter">Всі</li>
-            <li class="partners-filter">Покрівля</li>
-            <li class="partners-filter">Утеплювач</li>
-            <li class="partners-filter">Будівництво</li>
-            <li class="partners-filter">Миючи засоби</li>
+        <h2 class="second-title" data-translate-key="partners">Партнери</h2>
+        <p class="section-description" data-translate-key="partners-des1">Наш успіх - це результат сильного партнерства з 
+            провідними компаніями та організаціями, які поділяють наші цінності та місію.</p>
+        <ul class="partners-filters block-center">
+            <li role="button" class="partners-filter active">Всі</li>
+            <li role="button" class="partners-filter">Покрівля</li>
+            <li role="button" class="partners-filter">Утеплювач</li>
+            <li role="button" class="partners-filter">Будівництво</li>
+            <li role="button" class="partners-filter">Миючи засоби</li>
         </ul>
         <div class="partners-wrapper">
-            <ul class="partners-list left">
-                <li class="partners-list__element">Партнер1</li>
-                <li class="partners-list__element">Партнер2</li>
-                <li class="partners-list__element">Партнер3</li>
-                <li class="partners-list__element">Партнер4</li>
-                <li class="partners-list__element">Партнер5</li>
-                <li class="partners-list__element">Партнер6</li>
-                <li class="partners-list__element">Партнер7</li>
-                <li class="partners-list__element">Партнер8</li>
-            </ul>
+            <div class="partners-list left">
+                <div class="partners-list__row">
+                    <div class="partners-list__element" data-json-url-en="json/description_partners_en.json" data-json-url="json/description_partners_ua.json">
+                        <img src="images/partners/sweetondale.jpg" alt="SWEETONDALE">
+                        <span class="partners-list__title bold">SWEETONDALE</span>
+                    </div>
+                    <div class="partners-list__element">
+                        <img src="images/partners/anserglobe.jpg" alt="ANSERGLOBE">
+                        <span class="partners-list__title bold">ANSERGLOBE</span>
+                    </div>
+                    <div class="partners-list__element">
+                        <img src="images/partners/aquaizol.jpg" alt="AQUAIZOL">
+                        <span class="partners-list__title bold">AQUAIZOL</span>
+                    </div>
+                </div>
+                <div class="partners-list__row">
+                    <div class="partners-list__element">
+                        <img src="images/partners/ceresit.jpg" alt="CERESIT">
+                        <span class="partners-list__title bold">CERESIT</span>
+                    </div>
+                    <div class="partners-list__element">
+                        <img src="images/partners/dufa.jpg" alt="DUFA">
+                        <span class="partners-list__title bold">DUFA</span>
+                    </div>
+                    <div class="partners-list__element">
+                        <img src="images/partners/Knauf.jpg" alt="KNAUF">
+                        <span class="partners-list__title bold">KNAUF</span>
+                    </div>
+                </div>
+                <div class="partners-list__row">
+                    <div class="partners-list__element">
+                        <img src="images/partners/Kronospan.jpg" alt="KRONOSPAN">
+                        <span class="partners-list__title bold">KRONOSPAN</span>
+                    </div>
+                    <div class="partners-list__element">
+                        <img src="images/partners/lacrysil.jpg" alt="LACRYSIL">
+                        <span class="partners-list__title bold">LACRYSIL</span>
+                    </div>
+                    <div class="partners-list__element">
+                        <img src="images/partners/mapei.jpg" alt="MAPEI">
+                        <span class="partners-list__title bold">MAPEI</span>
+                    </div>
+                </div>
+                <div class="partners-list__row">
+                    <div class="partners-list__element">
+                        <img src="images/partners/psm-profile.jpg" alt="PSM-PROFILE">
+                        <span class="partners-list__title bold">PSM-PROFILE</span>
+                    </div>
+                    <div class="partners-list__element">
+                        <img src="images/partners/sika_building_trust.jpg" alt="SIKA BUILDING TRUST">
+                        <span class="partners-list__title bold">SIKA BUILDING TRUST</span>
+                    </div>
+                    <div class="partners-list__element">
+                        <img src="images/partners/stlight.jpg" alt="STONELIGHT">
+                        <span class="partners-list__title bold">STONELIGHT</span>
+                    </div>
+                </div>
+            </div>
             <div class="partner-card right">
                 <div class="partner-card__title">
-                    <img src="" alt="Партнер1" class="partner-card__image" />
-                    <span class="partner-card__name">Партнер1</span>
+                    <img src="images/partners/sweetondale.jpg" alt="SWEETONDALE" class="partner-card__image" />
+                    <span class="partner-card__name">SWEETONDALE</span>
                 </div>
-                <p class="partner-card__description">Опис першого партнера та інша інформація,
-                    яка стосується партнера та його продукції</p>
+                <p class="partner-card__description" data-translate-key="partners-des2">Є одним із найбільших міжнародних виробників надійних 
+                    та ефективних будівельних матеріалів. Компанія пропонує ринку новітні технології, 
+                    що поєднують у собі світовий досвід та розробки власних Наукових центрів. Співпраця з 
+                    проектними інститутами та архітектурними майстернями дозволяє гнучко та оперативно 
+                    реагувати на зміни запитів споживачів.</p>
             </div>
         </div>
     </section>
-    <section class="sertificate" id="sertificate">
-        <h2 class="second-title">Сертифікати</h2>
-        <ul class="sertificate-list">
-            <li class="sertificate-list__element">Сертифікат1</li>
-            <li class="sertificate-list__element">Сертифікат2</li>
-            <li class="sertificate-list__element">Сертифікат3</li>
-            <li class="sertificate-list__element">Сертифікат4</li>
-            <li class="sertificate-list__element">Сертифікат5</li>
-            <li class="sertificate-list__element">Сертифікат6</li>
-            <li class="sertificate-list__element">Сертифікат7</li>
-            <li class="sertificate-list__element">Сертифікат8</li>
-        </ul>
+    <section class="sertificate block-center section-grey" id="sertificate">
+        <h2 class="second-title" data-translate-key="sertificates">Сертифікати</h2>
+        <div class="sertificate-list slider">
+            <input type="radio" class="slider__input" name="slider_sertificates" id="slider_sertificates-1" />
+            <input type="radio" class="slider__input" name="slider_sertificates" id="slider_sertificates-2" />
+            <input type="radio" class="slider__input" name="slider_sertificates" id="slider_sertificates-3" />
+            <div class="sertificate-list__view slider__wrapper">
+                <a href="images/sertificate/sert1.jpg" class="sertificate-list__element slider__link block-center" target="_blank">
+                    <img class="sertificate-list__image slider__image" src="images/sertificate/sert1.jpg" alt="Фактум-1">
+                </a>
+                <a href="images/sertificate/sert2.jpg" class="sertificate-list__element slider__link block-center" target="_blank">
+                    <img class="sertificate-list__image slider__image" src="images/sertificate/sert2.jpg" alt="Фактум-2">
+                </a>
+                <a href="images/sertificate/sert3.jpg" class="sertificate-list__element slider__link block-center" target="_blank">
+                    <img class="sertificate-list__image slider__image" src="images/sertificate/sert3.jpg" alt="ДАХ">
+                </a>
+            </div>
+            <div class="sertificate-list__view slider__wrapper">
+                <a href="images/sertificate/sert4.jpg" class="sertificate-list__element slider__link block-center" target="_blank">
+                    <img class="sertificate-list__image slider__image" src="images/sertificate/sert4.jpg" alt="SWEETONDALE-1">
+                </a>
+                <a href="images/sertificate/sert5.jpg" class="sertificate-list__element slider__link block-center" target="_blank">
+                    <img class="sertificate-list__image slider__image" src="images/sertificate/sert5.jpg" alt="SWEETONDALE-2">
+                </a>
+                <a href="images/sertificate/sert6.jpg" class="sertificate-list__element slider__link block-center" target="_blank">
+                    <img class="sertificate-list__image slider__image" src="images/sertificate/sert6.jpg" alt="KRONOSPAN">
+                </a>
+            </div>
+            <div class="sertificate-list__view slider__wrapper">
+                <a href="images/sertificate/sert7.jpg" class="sertificate-list__element slider__link block-center" target="_blank">
+                    <img class="sertificate-list__image slider__image" src="images/sertificate/sert7.jpg" alt="KNAUF">
+                </a>
+                <a href="images/sertificate/sert1.jpg" class="sertificate-list__element slider__link block-center" target="_blank">
+                    <img class="sertificate-list__image slider__image" src="images/sertificate/sert1.jpg" alt="test">
+                </a>
+                <a href="images/sertificate/sert2.jpg" class="sertificate-list__element slider__link block-center" target="_blank">
+                    <img class="sertificate-list__image slider__image" src="images/sertificate/sert2.jpg" alt="test">
+                </a>
+            </div>
+        </div>
+        <div class="slider__controls">
+            <label for="slider_sertificates-1" class="slider__controls-element"></label>
+            <label for="slider_sertificates-2" class="slider__controls-element"></label>
+            <label for="slider_sertificates-3" class="slider__controls-element"></label>
+        </div>
     </section>
     <section class="contact-us" id="contact-us">
-        <h2 class="second-title">Звротній зв'язок</h2>
+        <h2 class="second-title" data-translate-key="Feedback">Зворотній зв'язок</h2>
         <form action="" class="contact-us__form">
-            <div class="input-wrapper">
-                <label class="label" for="name">Ім'я</label>
-                <input class="input" type="text" id="name" required/>
+            <div class="input-wrapper left">
+                <label class="labels" for="name" data-translate-key="name">Ім'я</label>
+                <input class="input" type="text" placeholder="Введіть ваше ім'я" placeholder-translate-key="namePlaceholder" id="name" required/>
             </div>
-            <div class="input-wrapper">
-                <label class="label" for="email">Email</label>
-                <input class="input" type="email" id="email" required/>
+            <div class="input-wrapper right">
+                <label class="labels" for="email">Email</label>
+                <input class="input" type="email" placeholder="Введіть ваш email" placeholder-translate-key="emailPlaceholder" id="email" required/>
             </div>
-            <div class="input-wrapper">
-                <label class="label" for="number">Номер телефону</label>
-                <input class="input" type="number" id="number" required/>
+            <div class="input-wrapper left phone">
+                <label class="labels" for="phone" data-translate-key="phone">Номер телефону</label>
+                <input class="input" type="phone" placeholder="Введіть ваш номер телефону" placeholder-translate-key="phonePlaceholder" id="phone" required/>
             </div>
+            <div class="cls"></div>
             <div class="textarea-wrapper">
-                <label class="label" for="message">Повідомлення</label>
-                <textarea class="textarea" name="message" id="message" cols="30" rows="10" required></textarea>
+                <label class="labels" for="message" data-translate-key="message">Повідомлення</label>
+                <textarea class="textarea" name="message" id="message" placeholder="Детально опишіть ваше запитання" placeholder-translate-key="messagePlaceholder" cols="30" rows="10" required></textarea>
             </div>
-            <button class="submit" type="submit">Надіслати</button>
+            <button class="submit" type="submit" data-translate-key="submit">Надіслати</button>
         </form>
     </section>
     <footer>
@@ -189,9 +408,11 @@
             </li>
         </ul>
         <div class="footer-about">
-            <p>&copy;&nbsp;2024&nbsp;УКРБУДІНВЕСТ-ТОРГ.&nbsp;Усі&nbsp;права&nbsp;захищені.</p>
+            <p data-translate-key="footer">&copy;&nbsp;2024&nbsp;УКРБУДІНВЕСТ-ТОРГ.&nbsp;Усі&nbsp;права&nbsp;захищені.</p>
         </div>
     </footer>
-    <script src="../scripts/script.js"></script>
+    <script src="scripts/translate.js"></script>
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/partners.js"></script>
 </body>
 </html>
