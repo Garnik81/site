@@ -1,7 +1,7 @@
 {
   "llc": {
     "ukrainian": "УКРБУДІНВЕСТ-ТОРГ",
-    "english": "UKRBUDINVEST-TORG"
+    "english": "UKRBUDINVEST-TRADE"
   },
   "building": {
     "ukrainian": "Будуємо майбутнє разом. Ми зможемо все!",
@@ -25,7 +25,7 @@
   },
   "llcf": {
     "ukrainian": "Товариство з обмеженою відповідальністю «УКРБУДІНВЕСТ-ТОРГ»",
-    "english": "Limited Liability Company «UKRBUDINVEST-TORG»"
+    "english": "Limited Liability Company «UKRBUDINVEST-TRADE»"
   },
   "a_c_des1": {
     "ukrainian": "Має багаторічний досвід роботи у галузі постачання різноманітних матеріалів. Компанія приймає участь у комерційних та державних тендерних закупівлях. Маємо власне виробництво габіонів та скоби будівельної.",
@@ -124,8 +124,8 @@
     "english": "Legal address:"
   },
     "a_c_des25": {
-    "ukrainian": "85306, Донецька область, місто Покровськ, вулиця Шмідта, будинок 161А",
-    "english": "85306, Donetsk region, Pokrovsk city, Schmidt street, building 161A"
+    "ukrainian": "Україна, 85306, Донецька область, місто Покровськ, вулиця Шмідта, будинок 161А",
+    "english": "Ukraine, 85306, Donetsk region, Pokrovsk city, Schmidt street, building 161A"
   },
     "a_c_des26": {
     "ukrainian": "Банківські реквізити:",
@@ -134,6 +134,18 @@
     "a_c_des27": {
     "ukrainian": "IBAN UA603355480000026009053628045 в АТ КБ «Приватбанк» МФО 335548",
     "english": "IBAN UA603355480000026009053628045, JSC CB PRIVATBANK, Bank code 335548"
+  },
+  "a_c_des28": {
+  "ukrainian": "Директор:",
+  "english": "Director:"
+  },
+  "a_c_des29": {
+  "ukrainian": "Толстогузова Тетяна Василівна",
+  "english": "Tolstohuzova Tetiana Vasylivna"
+  },
+  "a_c_des30": {
+  "ukrainian": "Телефон:",
+  "english": "Phone:"
   },
   "partners": {
   "ukrainian": "Партнери",
