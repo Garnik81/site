@@ -5,6 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+        .slide1 { background-image: url(images/slide-image/image1.webp); }
+        .slide2 { background-image: url(images/slide-image/image2.webp); }
+        .slide3 { background-image: url(images/slide-image/image3.webp); }
+        .slide4 { background-image: url(images/slide-image/image4.webp); }
+        .slide5 { background-image: url(images/slide-image/image5.webp); }
+        .slide6 { background-image: url(images/slide-image/image6.webp); }
+        .slide7 { background-image: url(images/slide-image/image7.webp); }
+        .slide8 { background-image: url(images/slide-image/image8.webp); }
+        .slide9 { background-image: url(images/slide-image/image9.webp); }
+        .slide10 { background-image: url(images/slide-image/image10.webp); }
+        .switcher:before {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 30px;
+            color: #000000;
+            background-image: url("../images/switcher/Britain.webp");
+            background-size: cover; /* или другое значение, чтобы изображение подстраивалось под размер блока */
+            left: 42px;
+            z-index: 1;
+            border-radius: 20px;
+            transition: left 0.25s ease-in-out;
+        }
+
+        #lang:checked + .switcher:before {
+            left: 6px;
+            background-image: url("../images/switcher/ukraine.webp");
+            background-size: cover; /* или другое значение, чтобы изображение подстраивалось под размер блока */
+        }
+    </style>
     <title data-translate-key="llc">УКРБУДІНВЕСТ-ТОРГ</title>
 </head>
 <body>
@@ -249,64 +280,64 @@
             <div class="partners-list left">
                 <div class="partners-list__row">
                     <div class="partners-list__element" data-json-url-en="json/description_partners_en.json" data-json-url="json/description_partners_ua.json">
-                        <img src="images/partners/sweetondale.jpg" alt="SWEETONDALE">
+                        <img src="../images/partners/sweetondale.jpg" alt="SWEETONDALE">
                         <span class="partners-list__title bold">SWEETONDALE</span>
                     </div>
                     <div class="partners-list__element">
-                        <img src="images/partners/anserglobe.jpg" alt="ANSERGLOBE">
+                        <img src="../images/partners/anserglobe.jpg" alt="ANSERGLOBE">
                         <span class="partners-list__title bold">ANSERGLOBE</span>
                     </div>
                     <div class="partners-list__element">
-                        <img src="images/partners/aquaizol.jpg" alt="AQUAIZOL">
+                        <img src="../images/partners/aquaizol.jpg" alt="AQUAIZOL">
                         <span class="partners-list__title bold">AQUAIZOL</span>
                     </div>
                 </div>
                 <div class="partners-list__row">
                     <div class="partners-list__element">
-                        <img src="images/partners/ceresit.jpg" alt="CERESIT">
+                        <img src="../images/partners/ceresit.jpg" alt="CERESIT">
                         <span class="partners-list__title bold">CERESIT</span>
                     </div>
                     <div class="partners-list__element">
-                        <img src="images/partners/dufa.jpg" alt="DUFA">
+                        <img src="../images/partners/dufa.jpg" alt="DUFA">
                         <span class="partners-list__title bold">DUFA</span>
                     </div>
                     <div class="partners-list__element">
-                        <img src="images/partners/Knauf.jpg" alt="KNAUF">
+                        <img src="../images/partners/Knauf.jpg" alt="KNAUF">
                         <span class="partners-list__title bold">KNAUF</span>
                     </div>
                 </div>
                 <div class="partners-list__row">
                     <div class="partners-list__element">
-                        <img src="images/partners/Kronospan.jpg" alt="KRONOSPAN">
+                        <img src="../images/partners/Kronospan.jpg" alt="KRONOSPAN">
                         <span class="partners-list__title bold">KRONOSPAN</span>
                     </div>
                     <div class="partners-list__element">
-                        <img src="images/partners/lacrysil.jpg" alt="LACRYSIL">
+                        <img src="../images/partners/lacrysil.jpg" alt="LACRYSIL">
                         <span class="partners-list__title bold">LACRYSIL</span>
                     </div>
                     <div class="partners-list__element">
-                        <img src="images/partners/mapei.jpg" alt="MAPEI">
+                        <img src="../images/partners/mapei.jpg" alt="MAPEI">
                         <span class="partners-list__title bold">MAPEI</span>
                     </div>
                 </div>
                 <div class="partners-list__row">
                     <div class="partners-list__element">
-                        <img src="images/partners/psm-profile.jpg" alt="PSM-PROFILE">
+                        <img src="../images/partners/psm-profile.jpg" alt="PSM-PROFILE">
                         <span class="partners-list__title bold">PSM-PROFILE</span>
                     </div>
                     <div class="partners-list__element">
-                        <img src="images/partners/sika_building_trust.jpg" alt="SIKA BUILDING TRUST">
+                        <img src="../images/partners/sika_building_trust.jpg" alt="SIKA BUILDING TRUST">
                         <span class="partners-list__title bold">SIKA BUILDING TRUST</span>
                     </div>
                     <div class="partners-list__element">
-                        <img src="images/partners/stlight.jpg" alt="STONELIGHT">
+                        <img src="../images/partners/stlight.jpg" alt="STONELIGHT">
                         <span class="partners-list__title bold">STONELIGHT</span>
                     </div>
                 </div>
             </div>
             <div class="partner-card right">
                 <div class="partner-card__title">
-                    <img src="images/partners/sweetondale.jpg" alt="SWEETONDALE" class="partner-card__image" />
+                    <img src="../images/partners/sweetondale.jpg" alt="SWEETONDALE" class="partner-card__image" />
                     <span class="partner-card__name">SWEETONDALE</span>
                 </div>
                 <p class="partner-card__description" data-translate-key="partners-des2">Є одним із найбільших міжнародних виробників надійних 
@@ -324,36 +355,36 @@
             <input type="radio" class="slider__input" name="slider_sertificates" id="slider_sertificates-2" />
             <input type="radio" class="slider__input" name="slider_sertificates" id="slider_sertificates-3" />
             <div class="sertificate-list__view slider__wrapper">
-                <a href="images/sertificate/sert1.jpg" class="sertificate-list__element slider__link block-center" target="_blank">
-                    <img class="sertificate-list__image slider__image" src="images/sertificate/sert1.jpg" alt="Фактум-1">
+                <a href="../images/sertificate/sert1.JPG" class="sertificate-list__element slider__link block-center" target="_blank">
+                    <img class="sertificate-list__image slider__image" src="../images/sertificate/sert1.JPG" alt="Фактум-1">
                 </a>
-                <a href="images/sertificate/sert2.jpg" class="sertificate-list__element slider__link block-center" target="_blank">
-                    <img class="sertificate-list__image slider__image" src="images/sertificate/sert2.jpg" alt="Фактум-2">
+                <a href="../images/sertificate/sert2.JPG" class="sertificate-list__element slider__link block-center" target="_blank">
+                    <img class="sertificate-list__image slider__image" src="../images/sertificate/sert2.JPG" alt="Фактум-2">
                 </a>
-                <a href="images/sertificate/sert3.jpg" class="sertificate-list__element slider__link block-center" target="_blank">
-                    <img class="sertificate-list__image slider__image" src="images/sertificate/sert3.jpg" alt="ДАХ">
-                </a>
-            </div>
-            <div class="sertificate-list__view slider__wrapper">
-                <a href="images/sertificate/sert4.jpg" class="sertificate-list__element slider__link block-center" target="_blank">
-                    <img class="sertificate-list__image slider__image" src="images/sertificate/sert4.jpg" alt="SWEETONDALE-1">
-                </a>
-                <a href="images/sertificate/sert5.jpg" class="sertificate-list__element slider__link block-center" target="_blank">
-                    <img class="sertificate-list__image slider__image" src="images/sertificate/sert5.jpg" alt="SWEETONDALE-2">
-                </a>
-                <a href="images/sertificate/sert6.jpg" class="sertificate-list__element slider__link block-center" target="_blank">
-                    <img class="sertificate-list__image slider__image" src="images/sertificate/sert6.jpg" alt="KRONOSPAN">
+                <a href="../images/sertificate/sert3.JPG" class="sertificate-list__element slider__link block-center" target="_blank">
+                    <img class="sertificate-list__image slider__image" src="../images/sertificate/sert3.JPG" alt="ДАХ">
                 </a>
             </div>
             <div class="sertificate-list__view slider__wrapper">
-                <a href="images/sertificate/sert7.jpg" class="sertificate-list__element slider__link block-center" target="_blank">
-                    <img class="sertificate-list__image slider__image" src="images/sertificate/sert7.jpg" alt="KNAUF">
+                <a href="../images/sertificate/sert4.JPG" class="sertificate-list__element slider__link block-center" target="_blank">
+                    <img class="sertificate-list__image slider__image" src="../images/sertificate/sert4.JPG" alt="SWEETONDALE-1">
                 </a>
-                <a href="images/sertificate/sert1.jpg" class="sertificate-list__element slider__link block-center" target="_blank">
-                    <img class="sertificate-list__image slider__image" src="images/sertificate/sert1.jpg" alt="test">
+                <a href="../images/sertificate/sert5.JPG" class="sertificate-list__element slider__link block-center" target="_blank">
+                    <img class="sertificate-list__image slider__image" src="../images/sertificate/sert5.JPG" alt="SWEETONDALE-2">
                 </a>
-                <a href="images/sertificate/sert2.jpg" class="sertificate-list__element slider__link block-center" target="_blank">
-                    <img class="sertificate-list__image slider__image" src="images/sertificate/sert2.jpg" alt="test">
+                <a href="../images/sertificate/sert6.JPG" class="sertificate-list__element slider__link block-center" target="_blank">
+                    <img class="sertificate-list__image slider__image" src="../images/sertificate/sert6.JPG" alt="KRONOSPAN">
+                </a>
+            </div>
+            <div class="sertificate-list__view slider__wrapper">
+                <a href="../images/sertificate/sert7.JPG" class="sertificate-list__element slider__link block-center" target="_blank">
+                    <img class="sertificate-list__image slider__image" src="../images/sertificate/sert7.JPG" alt="KNAUF">
+                </a>
+                <a href="../images/sertificate/sert1.JPG" class="sertificate-list__element slider__link block-center" target="_blank">
+                    <img class="sertificate-list__image slider__image" src="../images/sertificate/sert1.JPG" alt="test">
+                </a>
+                <a href="../images/sertificate/sert2.JPG" class="sertificate-list__element slider__link block-center" target="_blank">
+                    <img class="sertificate-list__image slider__image" src="../images/sertificate/sert2.JPG" alt="test">
                 </a>
             </div>
             <div class="slider__controls block-center">
